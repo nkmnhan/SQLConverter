@@ -4,9 +4,9 @@ using SQLConverter;
 
 Console.WriteLine("Input workspace:");
 var workSpace = Console.ReadLine();
-if(string.IsNullOrEmpty(workSpace))
+if (string.IsNullOrEmpty(workSpace))
 {
-    workSpace = @"C:\Users\nhan.nguyen\Desktop";
+    workSpace = @"C:\temp\";
 }
 
 var allFiles = Directory.GetFiles(workSpace).Where(x => x.EndsWith(".data"));
